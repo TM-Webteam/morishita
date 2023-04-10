@@ -1,0 +1,76 @@
+/*
+  ----------------
+  rosehip
+  ----------------
+*/
+
+.rosehip {
+  
+  .hero-lower {
+    background: url("../img/rosehip/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/rosehip/bg-hero.webp") 30% 50% / cover no-repeat;
+    }
+  }
+
+  .case-study {
+    .lead {
+      a {
+        span {
+          color: #1A0DAB;
+          text-decoration: underline;
+        }
+        &:hover {
+          opacity: 1;
+          span {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .graph {
+      &__list {
+        width: 60%;
+        @media #{$sp} {
+          width: 100%;
+        }
+        li {
+          width: calc(100% / 2 - 30px);
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 1.5;
+          @media #{$sp} {
+            font-size: 12px;
+            width: calc(100% / 2 - 10px);
+          }
+          h3 {
+            display: inline;
+          }
+          &::before {
+            content: "●";
+            font-size: 18px;
+            display: inline-block;
+            margin-right: 10px;
+            @media #{$sp} {
+              font-size: 12px;
+            }
+          }
+          &:not(:last-child) {
+            @media #{$sp} {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+      &__img {
+        width: calc(100% - 60% - 30px);
+        @media #{$sp} {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+}
+

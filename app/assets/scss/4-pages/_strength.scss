@@ -1,0 +1,93 @@
+/*
+  ----------------
+  strength
+  ----------------
+*/
+
+.strength {
+
+  .hero-lower {
+    height: 430px;
+    background: url("../img/strength/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      width: 100%;
+      &--sub {
+        margin-bottom: 40px;
+        @media #{$sp} {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .alternate {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+    &__box {
+      width: calc(100% / 2 - 20px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--num {
+        font-family: din-2014, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 76px;
+        line-height: 1;
+        margin-bottom: 15px;
+        @media #{$sp} {
+          font-size: 30px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+      &--ttl {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &--txt {
+        line-height: 1.875;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        margin: 0;
+        max-width: 380px;
+        font-size: 16px;
+        padding: 15px;
+        @media #{$sp} {
+          margin: 0 auto;
+          max-width: 85%;
+          font-size: 12px;
+          padding: 10px;
+        }
+      }
+    }
+    &__img {
+      width: calc(100% / 2 - 20px);
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  
+
+  
+}
+

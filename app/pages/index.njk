@@ -1,0 +1,232 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="top">
+
+  <section class="hero">
+    <div class="containers">
+      <div class="hero__sub"><span>独自の原料素材</span>・<span>シームレスカプセル技術</span>で<br class="sp-only"><ruby>差<rt>・</rt>別<rt>・</rt>化<rt>・</rt></ruby>できる商品開発をサポート</div>
+      <h1 class="ttl-primary">機能性表示食品開発＆<br>新たな価値提供の支援サービス</h1>
+      <div class="hero__lead">長年蓄積された原料調達のノウハウを駆使し、確立された品質管理体制のもとで、<br>差別化できる商品開発を支援いたします。</div>
+      <div class="flex fS aiC hero__btn">
+        <a href="/differentiation/" class="more core">差別化できる商品開発をしたい企業様へ</a>
+        <div class="cta-btn">
+          <div class="balloon"><span class="balloon__txt">差別化をサポートする森下仁丹のサービス資料</span></div>
+          <a href="/catalog/" class="more bgY">サービス資料ダウンロード</a>
+          <summary class="tooltip cW">お申込み後、リアルタイムでお送りいたします！</summary>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">規模・業界問わず多くの企業様に<br class="sp-only">ご利用いただいております。</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo-kinzirushi.svg" alt="金印わさび"></li>
+        <li><img src="/assets/img/common/logo-kewpie.svg" alt="キューピー"></li>
+        <li><img src="/assets/img/common/logo-salon.svg" alt="サロンドロワイヤル"></li>
+        <li><img src="/assets/img/common/logo-megu.svg" alt="雪印メグミルク"></li>
+      </ul>
+      <a href="/case/" class="more">実績・事例を見る</a>
+    </div>
+  </section>
+
+  <section class="product bg-pattern">
+    <div class="containers">
+      <h2 class="ttl-secondary">独自の原料素材とシームレスカプセル技術で<br class="pc-only">差別化された商品開発を<br class="sp-only">サポートします。</h2>
+      <div class="flex jcC gap30 item">
+        <a href="/rosehip_polyphenol/" class="item__box">
+          <div class="telop"><span>原料供給</span></div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-product01.jpg" alt="ローズヒップポリフェノール"></figure>
+          <summary class="item__box--ttl">ローズヒップポリフェノール</summary>
+        </a>
+        <a href="/cassis/" class="item__box">
+          <div class="telop"><span>原料供給</span></div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-product02.jpg" alt="カシスエキス"></figure>
+          <summary class="item__box--ttl">カシスエキス</summary>
+        </a>
+        <a href="/salacia/" class="item__box">
+          <div class="telop"><span>原料供給</span></div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-product03.jpg" alt="サラシアエキス"></figure>
+          <summary class="item__box--ttl">サラシアエキス</summary>
+        </a>
+        <a href="/seamless_capsule/" class="item__box">
+          <div class="telop"><span class="oem">OEM・受託製造</span></div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-product04.jpg" alt="シームレスカプセル受託"></figure>
+          <summary class="item__box--ttl">シームレスカプセル受託</summary>
+        </a>
+        <a href="/supplement_oem/" class="item__box">
+          <div class="telop"><span class="oem">OEM・受託製造</span></div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-product05.jpg" alt="サプリメントOEM受託"></figure>
+          <summary class="item__box--ttl">サプリメントOEM受託</summary>
+        </a>
+      </div>
+      <div class="cta-btn">
+        <div class="balloon"><span class="balloon__txt">差別化をサポートする森下仁丹のサービス資料</span></div>
+        <a href="/catalog/" class="more bgY wp-thumb">サービス資料ダウンロード</a>
+        <summary class="tooltip">お申込み後、リアルタイムでお送りいたします！</summary>
+      </div>
+    </div>
+  </section>
+
+  <section class="needs">
+    <div class="containers">
+      <h2 class="ttl-secondary">「機能性表示食品をつくりたい」<br class="sp-only">「新たな付加価値をつけたい」<br>このようなニーズやお悩みは<br class="sp-only">ございませんか？</h2>
+      <ul class="flex gap30 card">
+        <li class="card__box">
+          <div class="card__box--ttl core">差別化のネタが見つからない</div>
+          <figure class="card__box--img"><img src="/assets/img/top/img-needs01.jpg" alt="差別化のネタが見つからない"></figure>
+        </li>
+        <li class="card__box">
+          <div class="card__box--ttl core">機能性原料が見つからない<br>使い方がわからない</div>
+          <figure class="card__box--img"><img src="/assets/img/top/img-needs02.jpg" alt="機能性原料が見つからない使い方がわからない"></figure>
+        </li>
+        <li class="card__box">
+          <div class="card__box--ttl core">機能性表示食品の届出業務を<br>サポートしてほしい</div>
+          <figure class="card__box--img"><img src="/assets/img/top/img-needs03.jpg" alt="機能性表示食品の届出業務をサポートしてほしい"></figure>
+        </li>
+      </ul>
+      <div class="speech"><span>差別化できる商品開発をサポートいたします。</span></div>
+      <a href="/differentiation/" class="more">詳しくはこちら</a>
+    </div>
+  </section>
+
+  <section class="useful-wp">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">お役立ち資料</h2>
+      <div class="lead">差別化できる商品開発におけるトレンドや開発段階の課題解決につながるノウハウなどを<br>ご紹介しています。是非ご覧ください。</div>
+      <div class="flex gap30">
+        <a href="#" class="card">
+          <figure class="card__img"><img src="/assets/img/top/img-wp.png" alt=""></figure>
+          <summary class="card__box">
+            <div class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイト</div>
+            <div class="card__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
+            <div class="more bgY small">お役立ち資料をダウンロード</div>
+          </summary>
+        </a>
+        <a href="#" class="card">
+          <figure class="card__img"><img src="/assets/img/top/img-wp.png" alt=""></figure>
+          <summary class="card__box">
+            <div class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイト</div>
+            <div class="card__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
+            <div class="more bgY small">お役立ち資料をダウンロード</div>
+          </summary>
+        </a>
+      </div>
+      <a href="/whitepaper/" class="more">お役立ち資料一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="info bg-pattern">
+    <div class="containers">
+      <h2 class="ttl-secondary">会社情報</h2>
+      <div class="flex gap30 card">
+        <a href="/company/" class="flex aiC card__box">
+          <figure class="card__box--img"><img src="/assets/img/top/img-info01.svg" alt="企業情報"></figure>
+          <dl class="card__box--txt">
+            <dt>企業情報</dt>
+            <dd>1893年創業以来、人々の健康や豊かな暮らしの一助となる製品をお届けしてきた森下仁丹についてのご案内です。</dd>
+          </dl>
+        </a>
+        <a href="/strength/" class="flex card__box">
+          <figure class="card__box--img"><img src="/assets/img/top/img-info02.svg" alt="森下仁丹が選ばれる理由"></figure>
+          <dl class="card__box--txt">
+            <dt>森下仁丹が選ばれる理由</dt>
+            <dd>独自の原料素材、シームレスカプセル技術、機能性表示食品の制度づくりを進めてきた当社ならではのサポート力が選ばれる理由です。</dd>
+          </dl>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="containers">
+      <h2 class="ttl-secondary">お知らせ</h2>
+
+        <a href="#" class="news__box">
+          <dl class="flex aiC gap30 news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="news__box">
+          <dl class="flex aiC gap30 news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat alter">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="news__box">
+          <dl class="flex aiC gap30 news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="news__box">
+          <dl class="flex aiC gap30 news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat alter">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="news__box">
+          <dl class="flex aiC gap30 news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat alter">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+      
+      <a href="/news/" class="more">お知らせ一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">サービスに関するお問合せ・ご相談</h2>
+      <div class="lead">原料の供給から差別化できる商品開発のご相談まで、<br class="sp-only">お気軽にご相談ください。</div>
+      <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more bgY tiny">サービス資料</a>
+          <a href="/whitepaper/" class="more bgY tiny">お役立ち資料</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

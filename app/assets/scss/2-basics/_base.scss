@@ -1,0 +1,287 @@
+/*
+  ----------------
+  common styles
+  ----------------
+*/
+
+/*** 表示・非表示 ***/
+
+
+.pc-only-inline-block {
+  display: inline-block;
+  @media #{$sp} {
+    display: none;
+  }
+}
+
+
+/*** FlexBox ***/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  @media #{$sp} {
+    align-items: center;
+    justify-content: center;
+  }
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
+  &.inherit {
+    @media #{$sp} {
+      justify-content: space-between;
+      align-content: space-between;
+      align-items: stretch;
+    }
+  }
+  &.jcA {
+    justify-content: space-around;
+  }
+  &.sp-jcA {
+    @media #{$sp} {
+      justify-content: space-around;
+    }
+  }
+  &.jcC {
+    justify-content: center;
+  }
+  &.fS {
+    justify-content: flex-start;
+  }
+  &.fE {
+    justify-content: flex-end;
+  }
+  &.sp-fS {
+    @media #{$sp} {
+      justify-content: flex-start;
+    }
+  }
+  &.aiC {
+    align-items: center;
+  }
+  &.aiE {
+    align-items: flex-end;
+  }
+  &.aifS {
+    align-items: flex-start;
+  }
+  &.sp-aifS {
+    @media #{$sp} {
+      align-items: flex-start;
+    }
+  }
+  &.row-re {
+    flex-direction: row-reverse;
+  }
+  &.sp-row-re {
+    @media #{$sp} {
+      flex-direction: row-reverse;
+    }
+  }
+  &.sp-reverse {
+    @media #{$sp} {
+      flex-direction: column-reverse;
+    }
+  }
+  &.sp-sB {
+    @media #{$sp} {
+      justify-content: space-between;
+    }
+  }
+  &.gap10 {
+    gap: 10px;
+    @media #{$sp} {
+      gap: 5px;
+    }
+  }
+  &.gap20 {
+    gap: 20px;
+    @media #{$sp} {
+      gap: 10px;
+    }
+  }
+  &.gap30 {
+    gap: 30px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap40 {
+    gap: 40px;
+    @media #{$sp} {
+      gap: 20px;
+    }
+  }
+  &.gather {
+    &:after {
+      content:"";
+      display: block;
+      width:30.5%;
+    }
+  }
+}
+.sp-flex {
+  @media #{$sp} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+  }
+}
+
+.core {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/***********/
+
+a,button {
+	transition: all .3s;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+/*** Container ***/
+
+.containers {
+	max-width: $container;
+	width: 100%;
+	margin: 0 auto;
+	padding: 70px 30px;
+	@media #{$sp} {
+		padding: 35px 15px;
+	}
+}
+.containers-full {
+  max-width: $container-full;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  @media #{$sp} {
+    padding: 35px 15px;
+  }
+}
+
+/*** Shadow ***/
+
+.box-shadow {
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.txt-shadow {
+  text-shadow: 0 0 18px rgba(0,0,0,0.8);
+}
+
+/*** Scroll ***/
+
+.scroll {
+  @media #{$sp} {
+    overflow-x: scroll;
+  }
+}
+
+/*** Clearfix ***/
+
+.cf:before,
+.cf:after {
+  content:"";
+  display:block;
+  overflow:hidden;
+}
+.cf:after { clear:both; }
+.cf { 
+  zoom:1;
+  display: inline-table;
+}
+
+
+/*** その他 ***/
+
+main {
+  padding-top: 169px;
+  @media #{$sp} {
+    padding-top: 60px;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.floating {
+  position: fixed;
+  top: 150px;
+  right: 0;
+  width: 300px;
+  opacity: 0;
+  transition: all .3s;
+  display: none;
+  z-index: 99;
+  @media #{$sp} {
+    display: none;
+  }
+  &.fixed {
+    display: block;
+    opacity: 1;
+    @media #{$sp} {
+      display: none;
+    }
+  }
+}
+
+.bg-pattern {
+  background: url("../img/common/bg-pattern.webp") 50% / cover no-repeat;
+}
+
+.sec-B {
+  border-top: 7px solid rgba(13,91,171,0.3);
+  background-color:rgba(13,91,171,0.05);
+  @media #{$sp} {
+    border-top: 3px solid rgba(13,91,171,0.3);
+  }
+}
+
+.bg-G {
+  background: #F8F8F8;
+}
+
+.bg-B {
+  background: #F2F6FB;
+}
+
+.marker {
+  background-image: linear-gradient(top, transparent 50%, #FFF826 50%);
+}
+
+// 2カラムの場合の親要素class名
+
+.Sidebar {
+  width: 300px;
+  @media #{$sp} {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .search {
+    width: 100%;
+    margin: 0 auto 30px;
+    @media #{$sp} {
+      width: 80%;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+.Contents {
+  width: calc(100% - 300px - 60px);
+  @media #{$sp} {
+    width: 100%;
+  }
+}
+
+// end

@@ -1,0 +1,54 @@
+/*
+  ----------------
+  cassis
+  ----------------
+*/
+
+.cassis {
+
+  .hero-lower {
+    background: url("../img/cassis/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/cassis/bg-hero.webp") 30% 50% / cover no-repeat;
+    }
+  }
+
+  .case-study {
+    .item {
+      li {
+        text-align: center;
+        box-shadow: 0 3px 6px rgba(0,30,78,0.16);
+        width: calc(100% / 3 - 20px);
+        padding: 18px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 40px 0 0 40px;
+        @media #{$sp} {
+          width: 100%;
+          padding: 15px;
+          font-size: 16px;
+        }
+        &:nth-child(1) {
+          background: url("../img/cassis/img-case-study01.svg") 3px 50% no-repeat #DAE5F3;
+          @media #{$sp} {
+            background: url("../img/cassis/img-case-study01.svg") 3px 50% / 55px no-repeat #DAE5F3;
+          }
+        }
+        &:nth-child(2) {
+          background: url("../img/cassis/img-case-study02.svg") 3px 50% no-repeat #DAE5F3;
+          @media #{$sp} {
+            background: url("../img/cassis/img-case-study02.svg") 3px 50% / 55px no-repeat #DAE5F3;
+          }
+        }
+        &:nth-child(3) {
+          background: url("../img/cassis/img-case-study03.svg") 3px 50% no-repeat #DAE5F3;
+          @media #{$sp} {
+            background: url("../img/cassis/img-case-study03.svg") 3px 50% / 55px no-repeat #DAE5F3;
+          }
+        }
+      }
+    }
+  }
+  
+}
+

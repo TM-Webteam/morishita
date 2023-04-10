@@ -1,0 +1,46 @@
+/*
+  ----------------
+  contact
+  ----------------
+*/
+
+.contact {
+
+  .hero-lower {
+    height: 320px;
+    background: url("../img/contact/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      width: 100%;
+      &--sub {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form {
+    &__table {
+      tr {
+        border-bottom: 1px solid #CCCCCC;
+        th,td {
+          padding: 30px 0;
+          @media #{$sp} {
+            padding: 15px 0;
+          }
+        }
+        th {
+          padding: 30px 60px 30px 0;
+          @media #{$sp} {
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+    .more.bgY {
+      width: 100%;
+    }
+  }
+
+}

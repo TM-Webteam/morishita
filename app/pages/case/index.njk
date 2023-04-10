@@ -1,0 +1,129 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="case">
+
+  <section class="hero-lower core">
+    <div class="containers">
+      <div class="hero-lower__box">
+        <h1 class="ttl-primary">実績・事例</h1>
+        <div class="hero-lower__box--sub">森下仁丹は規模・業界問わず多くの企業様に<br class="sp-only">選ばれています。</div>
+        <div class="speech"><span class="cW">差別化できる商品開発をサポートいたします。</span></div>
+        <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">規模・業界問わず多くの企業様に<br class="sp-only">ご利用いただいております。</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo-cocacola.svg" alt="コカ・コーラ"></li>
+        <li><img src="/assets/img/common/logo-uha.svg" alt="UHA味覚糖"></li>
+        <li><img src="/assets/img/common/logo-suntory.svg" alt="Suntory"></li>
+        <li><img src="/assets/img/common/logo-yamasa.svg" alt="ヤマサ醤油株式会社"></li>
+        <li><img src="/assets/img/common/logo-yoshinoya.svg" alt="吉野家"></li>
+        <li><img src="/assets/img/common/logo-luna.svg" alt="日本ルナ株式会社"></li>
+        <li><img src="/assets/img/common/logo-kinzirushi.svg" alt="金印わさび"></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <section class="voice bg-G">
+    <div class="containers">
+      <h2 class="ttl-secondary">お客様の声</h2>
+
+      <div class="flex aiE voice__box">
+        <figure class="voice__box--img">
+          <img src="/assets/img/case/img-voice01.jpg" alt="" class="avatar">
+          <figcaption class="position">〇〇業　〇〇部門担当者</figcaption>
+          <span class="tag">導入事例 01</span>
+        </figure>
+        <dl class="voice__box--cmt">
+          <dt>他社には無い機能性表示食品の商品開発が実現できました</dt>
+          <dd>お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。</dd>
+        </dl>
+      </div>
+
+      <div class="flex aiE sp-reverse voice__box">
+        <dl class="voice__box--cmt v2">
+          <dt>他社には無い機能性表示食品の商品開発が実現できました</dt>
+          <dd>お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。お客様の声が入ります。</dd>
+        </dl>
+        <figure class="voice__box--img">
+          <img src="/assets/img/case/img-voice02.jpg" alt="" class="avatar">
+          <figcaption class="position">〇〇業　〇〇部門担当者</figcaption>
+          <span class="tag">導入事例 01</span>
+        </figure>
+      </div>
+      
+    </div>
+  </section> -->
+
+  <section class="quality">
+    <div class="containers">
+      <h2 class="ttl-secondary">サプリメント開発で培った技術と<br class="sp-only">高品質</h2>
+      <div class="lead">森下仁丹のサプリメント製品開発で培った技術と<br class="sp-only">高品質（安心、安全、信頼）をご提供します。</div>
+      <ul class="flex gap30">
+        <li class="card">
+          <div class="card__ttl">技術と品質</div>
+          <summary class="card__box">
+            <div class="card__box--ttl">健食GMP取得工場で<br>製造・管理いたします</div>
+            <ul class="card__box--list">
+              <li>GMP（※）管理下で安心安全を追究し、あらゆるニーズにお応えする、生産体制と品質保証体制をとっています。</li>
+              <li>様々な原料加工を可能とする技術開発力、付加価値の高い製品を生み出す企画提案力を持っています。</li>
+            </ul>
+          </summary>
+        </li>
+        <li class="card">
+          <div class="card__ttl">サポート</div>
+          <summary class="card__box">
+            <div class="card__box--ttl">ご要望に応じた<br>サービス提供が可能です</div>
+            <ul class="card__box--list">
+              <li>食品をはじめ、医薬品・医薬部外品まで、幅広い分野の商品開発に対応可能です。</li>
+              <li>原料供給から、サプリメントの最終製品でのご提供まで対応可能です。</li>
+            </ul>
+          </summary>
+        </li>
+      </ul>
+      
+      <div class="note">※GMP とは?<br>Good Manufacturing Practice(適正製造規範)の略で、製造管理・品質管理基準を<br class="pc-only">定めたものです。</div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">サービスに関するお問合せ・ご相談</h2>
+      <div class="lead">原料の供給から差別化できる商品開発のご相談まで、<br class="sp-only">お気軽にご相談ください。</div>
+      <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more bgY tiny">サービス資料</a>
+          <a href="/whitepaper/" class="more bgY tiny">お役立ち資料</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

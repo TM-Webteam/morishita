@@ -1,0 +1,178 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="cassis">
+
+  <section class="hero-lower core">
+    <div class="containers flex aiC sp-reverse">
+      <div class="hero-lower__box">
+        <div class="hero-lower__box--sub">目の健康を整える機能を<br class="sp-only">自社製品にスムーズにプラス。</div>
+        <h1 class="ttl-primary">カシスエキス</h1>
+        <figure class="hero-lower__box--img sp-only"><img src="/assets/img/cassis/img-hero.png" alt="カシスエキス"></figure>
+        <ul class="flex inherit hero-lower__box--effect">
+          <li>Wヘルスクレーム<br>が可能</li>
+          <li>単回摂取で<br>即効性あり</li>
+          <li>見た目の<br>インパクトあり</li>
+        </ul>
+        <div class="cta-btn">
+          <div class="balloon"><span class="balloon__txt">特徴・各種エビデンスが分かる！</span></div>
+          <a href="/catalog/" class="more bgY">サービス資料ダウンロード</a>
+          <summary class="tooltip">お申込み後、リアルタイムでお送りいたします！</summary>
+        </div>
+      </div>
+      <figure class="hero-lower__img pc-only"><img src="/assets/img/cassis/img-hero.png" alt="カシスエキス"></figure>
+    </div>
+  </section>
+
+  <section class="anc">
+    <div class="containers">
+      <ul class="flex jcC gap30 inherit anc__box">
+        <li><a href="#about">素材概要</a></li>
+        <li><a href="#feature">特長</a></li>
+        <li><a href="#case-study">開発商品例</a></li>
+        <li><a href="#support">サポート</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="about sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>カシスエキスとは</small>目の健康を整える機能を自社製品に<br class="sp-only">プラスできる機能性原料です。</h2>
+      <div class="flex aiC sp-reverse">
+        <dl class="about__box">
+          <dt>カシス丸ごと果実から抽出した<br>賦形剤を含まない100％のアイケア素材</dt>
+          <dd>カシス特有のルチノシド配糖体2種を含む4種のアントシアニンの総量を規格化しています。暗いところ・明るいところでもはっきり見たい方にニュージーランド産カシス果実から抽出した、Wヘルスクレームが可能*なアイケア素材です。<div class="note">※カシス原料として初の機能性表示食品制度において受理実績あり。</div></dd>
+        </dl>
+        <figure class="about__img"><img src="/assets/img/cassis/img-about.jpg" alt="カシス丸ごと果実から抽出した賦形剤を含まない100％のアイケア素材"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" class="feature sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>特長</small>カシスエキスは差別化にピッタリの<br class="sp-only">特長を持っています。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/cassis/img-feature01.png" alt="Wヘルスクレームが可能"></figure>
+          <dl class="card__box">
+            <dt>Wヘルスクレームが可能</dt>
+            <dd>ピント調節改善機能と暗順応改善機能により、2つのヘルスクレームが可能です。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/cassis/img-feature02.png" alt="単回摂取で即効性あり"></figure>
+          <dl class="card__box">
+            <dt>単回摂取で即効性あり</dt>
+            <dd>カシス特有のアントシアニンの濃度が濃いため、少量の使用で効果を発揮、即効性を求めるお客様に訴求できます。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/cassis/img-feature03.png" alt="見た目のインパクトあり"></figure>
+          <dl class="card__box">
+            <dt>見た目のインパクトあり</dt>
+            <dd>濃い紫色の色素で味も渋く、見た目のインパクトを求めるお菓子や食品としても使えます。</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="case-study" class="case-study sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>開発商品例</small>毎日摂取しやすい「食品」や<br class="sp-only">「健康食品」の商品化が最適です。</h2>
+      <div class="lead">以下のような商品開発を検討している企業様に<br class="sp-only">おすすめです。</div>
+      <ul class="flex gap30 item">
+        <li>サプリメント</li>
+        <li>お菓子</li>
+        <li>飲料</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec-wp">
+    <div class="containers">
+      <div class="flex aiC gap30 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp01.png" alt=""></figure>
+        <summary class="desc__box">
+          <div class="desc__box--sub">PC・スマホ疲れや更年期サポートなど、<br>多方面での利用拡大に期待</div>
+          <div class="desc__box--ttl">カシスエキスを活用した<br>食品開発のご提案</div>
+          <a href="/whitepaper/" class="more bgY small">ホワイトペーパーダウンロード</a>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+  <section id="support" class="support sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>サポート</small>原料の供給のみならず、<br>機能性表示食品としての商品開発や<br class="sp-only">売り方のサポートも可能です。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-support01.png" alt="機能性表示食品としての開発サポート"></figure>
+          <dl class="card__box">
+            <dt>機能性表示食品としての開発サポート</dt>
+            <dd>機能性表示食品の取得には、さまざまな手順が存在します。機能性表示食品の制度づくりの中心メンバーならではの視点で徹底的にサポートいたします。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-support02.png" alt="お客様に選んでいただくためのサポート"></figure>
+          <dl class="card__box">
+            <dt>お客様に選んでいただくためのサポート</dt>
+            <dd>原料の供給だけではなく、使い方の提案や原料の啓蒙活動を通じて、お客様に選んでいただくお手伝いをします。自社ブランド商品の販売実績もあるので、「売り方」のサポートも可能です。</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">規模・業界問わず多くの企業様に<br class="sp-only">ご利用いただいております。</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo-cocacola.svg" alt="コカ・コーラ"></li>
+        <li><img src="/assets/img/common/logo-uha.svg" alt="UHA味覚糖"></li>
+        <li><img src="/assets/img/common/logo-suntory.svg" alt="Suntory"></li>
+        <li><img src="/assets/img/common/logo-yamasa.svg" alt="ヤマサ醤油株式会社"></li>
+        <li><img src="/assets/img/common/logo-yoshinoya.svg" alt="吉野家"></li>
+        <li><img src="/assets/img/common/logo-luna.svg" alt="日本ルナ株式会社"></li>
+        <li><img src="/assets/img/common/logo-kinzirushi.svg" alt="金印わさび"></li>
+      </ul>
+      <a href="/case/" class="more">実績・事例を見る</a>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">サービスに関するお問合せ・ご相談</h2>
+      <div class="lead">原料の供給から差別化できる商品開発のご相談まで、<br class="sp-only">お気軽にご相談ください。</div>
+      <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more bgY tiny">サービス資料</a>
+          <a href="/whitepaper/" class="more bgY tiny">お役立ち資料</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

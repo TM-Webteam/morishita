@@ -1,0 +1,101 @@
+/*
+  ----------------
+  pagination
+  ----------------
+*/
+
+.pagination {
+  margin-top: 70px;
+  @media #{$sp} {
+    margin-top: 30px;
+  }
+  .screen-reader-text {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .page-numbers {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 50%;
+      border: 2px solid #E6EEF7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @media #{$sp} {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+      }
+      &:hover {
+        opacity: 1;
+        color: #0D5BAB;
+        background-color:#E6EEF7;
+      }
+      &.prev {
+        margin-right: 20px;
+        width: auto;
+        height: auto;
+        @media #{$sp} {
+          margin-right: 15px;
+        }
+        span {
+          display: block;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 6px;
+            height: 6px;
+            border: 2px solid;
+            border-color: transparent transparent #0D5BAB #0D5BAB;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      &.next {
+        margin-left: 20px;
+        width: auto;
+        height: auto;
+        @media #{$sp} {
+          margin-left: 15px;
+        }
+        span {
+          display: block;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 6px;
+            height: 6px;
+            border: 2px solid;
+            border-color: #0D5BAB #0D5BAB transparent transparent;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      &.current {
+        color: #0D5BAB;
+        background-color:#E6EEF7;
+      }
+    }
+  }
+}

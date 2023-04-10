@@ -1,0 +1,217 @@
+/*
+  ----------------
+  whitepaper
+  ----------------
+*/
+
+.arc-whitepaper {
+
+  .hero-lower {
+    height: 320px;
+    background: url("../img/whitepaper/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      height: auto;
+      background: url("../img/whitepaper/bg-hero.webp") 30% 50% / cover no-repeat;
+    }
+    &__box {
+      width: 100%;
+      &--sub {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 30px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    &__img {
+      width: 30%;
+      text-align: center;
+      overflow: hidden;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        transition: all .3s;
+      }
+    }
+    &__box {
+      width: calc(100% - 30% - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &--txt {
+        margin-bottom: 30px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more.small {
+        max-width: 360px;
+        margin: 0;
+        font-size: 16px;
+        transition: all .3s;
+        @media #{$sp} {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 14px;
+        }
+        &::before {
+          border-top: 2px solid #0d5bab;
+          border-right: 2px solid #0d5bab;
+        }
+      }
+    }
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      .card__img img {
+        transform: scale(1.1);
+      }
+      .more.small {
+        background: #0d5bab;
+        color: #fff;
+        border: 3px solid #0d5bab;
+        &::before {
+          border-top: 2px solid #fff;
+          border-right: 2px solid #fff;
+        }
+      }
+    }
+  }
+
+  .latest {
+
+    .containers {
+      padding: 70px 30px 0;
+      @media #{$sp} {
+        padding: 35px 15px 0;
+      }
+    }
+
+    .ttl-secondary.non {
+      text-align: center;
+    }
+    
+    .item {
+      padding: 30px;
+      background: #F2F6FB;
+      width: calc(100% / 2 - 20px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+      position: relative;
+      @media #{$sp} {
+        width: 100%;
+        padding: 20px;
+      }
+      &:hover {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(59,72,111,0.8);
+        background: #DFEDFF;
+      }
+      
+      &:not(:last-child) {
+        @media #{$sp} {
+          margin-bottom: 20px;
+        }
+      }
+      &__ttl {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &__img {
+        width: calc(100% / 2 - 15px);
+        @media #{$sp} {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        img {
+          aspect-ratio: 4 / 3;
+          object-fit: contain;
+        }
+      }
+      &__box {
+        width: calc(100% / 2 - 15px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        .cat {
+          display: inline-block;
+          text-align: center;
+          line-height: 1.4;
+          font-size: 14px;
+          padding: 5px 15px;
+          color: #fff;
+          border: 1px solid #0D5BAB;
+          background: #0D5BAB;
+          margin-bottom: 10px;
+          @media #{$sp} {
+            margin-bottom: 5px;
+            font-size: 12px;
+          }
+          &:not(:last-child) {
+            margin-right: 10px;
+            @media #{$sp} {
+              margin-right: 5px;
+            }
+          }
+        }
+        &--txt {
+          margin-bottom: 10px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+        }
+        &--time {
+          font-size: 14px;
+          color: rgba(0,0,0,0.5);
+          @media #{$sp} {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+}
+

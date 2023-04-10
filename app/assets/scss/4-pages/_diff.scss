@@ -1,0 +1,289 @@
+/*
+  ----------------
+  differentiation
+  ----------------
+*/
+
+.diff {
+
+  .hero-lower {
+    height: 490px;
+    background: url("../img/diff/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: 30%;
+        width: 560px;
+        height: 300px;
+        background-color:rgba(255,255,255,0.9);
+        border-radius: 10%;
+        filter: blur(60px);
+        z-index: -1;
+        @media #{$sp} {
+          width: 70%;
+          height: 200px;
+          filter: blur(30px);
+        }
+      }
+      &--sub {
+        color: #0D5BAB;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .ttl-primary {
+        color: #0D5BAB;
+      }
+      .speech {
+        span {
+          &::before {
+            @media #{$sp} {
+              width: 30px;
+              left: -2em;
+            }
+          }
+          &::after {
+            @media #{$sp} {
+              width: 30px;
+              right: -2em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .needs {
+    .containers {
+      padding: 70px 30px 90px;
+      @media #{$sp} {
+        padding: 35px 15px 60px;
+      }
+    }
+    .card {
+      margin-bottom: 0;
+      &__box {
+        display: block;
+        width: calc(100% / 3 - 20px);
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -30px;
+          margin: auto;
+          width: 10px;
+          height: 10px;
+          border-bottom: solid 5px #0D5BAB;
+          border-right: solid 5px #0D5BAB;
+          transform: rotate(45deg);
+          transition: all .3s;
+        }
+        @media #{$sp} {
+          width: 100%;
+        }
+        &:not(:last-child) {
+          @media #{$sp} {
+            margin-bottom: 40px;
+          }
+        }
+        &--ttl {
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 15px 30px;
+          height: 90px;
+          background: #222222;
+          @media #{$sp} {
+            font-size: 16px;
+            padding: 15px;
+            height: auto;
+          }
+        }
+        &--img {
+          overflow: hidden;
+          img {
+            transition: all .3s;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          &::before {
+            bottom: -35px;
+          }
+          .card__box--img img {
+            transform:scale(1.1,1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .instance {
+    .containers {
+      padding: 85px 30px 70px;
+      @media #{$sp} {
+        padding: 60px 15px 35px;
+      }
+    }
+    .card {
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 70px;
+        @media #{$sp} {
+          margin-bottom: 60px;
+        }
+      }
+      &__ttl {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -20px;
+        margin: auto;
+        max-width: 620px;
+        text-align: center;
+        background: #0D5BAB;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 5px;
+        @media #{$sp} {
+          top: -30px;
+          max-width: 85%;
+          font-size: 14px;
+        }
+        span {
+          color: #FFF841;
+        }
+      }
+      &__box {
+        padding: 50px 30px 30px;
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0,30,78,0.16);
+        @media #{$sp} {
+          padding: 50px 15px 15px;
+        }
+        &--txt {
+          width: calc(100% / 2 - 20px);
+          @media #{$sp} {
+            width: 100%;
+          }
+          dt {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            @media #{$sp} {
+              font-size: 16px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        &--img {
+          width: calc(100% / 2 - 20px);
+          @media #{$sp} {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .selection {
+    .card {
+      text-align: center;
+      width: calc(100% / 3 - 20px);
+      background: #fff;
+      @media #{$sp} {
+        width: 100%;
+      }
+      &__ttl {
+        padding: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        @media #{$sp} {
+          padding: 10px;
+          font-size: 16px;
+        }
+        &.bgB {
+          background: #57B2D4;
+        }
+        &.bgG {
+          background: #A5AB0E;
+        }
+      }
+      &__box {
+        padding: 30px;
+        @media #{$sp} {
+          padding: 15px 15px 30px;
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 1.5;
+          margin-bottom: 30px;
+          @media #{$sp} {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+        .more {
+          font-size: 16px;
+          padding: 10px;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+          &::before {
+            right: 15px;
+            width: 5px;
+            height: 5px;
+          }
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .sec-wp {
+    .desc {
+      &__img {
+        width: calc(100% - 50% - 30px);
+        text-align: right;
+        @media #{$sp} {
+          width: 85%;
+        }
+        img {
+          max-width: 450px;
+          @media #{$sp} {
+            max-width: 100%;
+          }
+        }
+      }
+      &__box {
+        width: calc(100% - 50% - 30px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        &--ttl {
+          @media #{$sp} {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+}

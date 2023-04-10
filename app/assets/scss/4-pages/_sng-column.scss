@@ -1,0 +1,25 @@
+/*
+  ----------------
+  sng-column
+  ----------------
+*/
+
+.sng-column {
+  
+  .bnr-catalog {
+    display: block;
+    margin: 0 auto 30px;
+    @media #{$sp} {
+      width: 85%;
+      margin: 0 auto 15px;
+    }
+  }
+
+  .sns {
+    margin-bottom: 30px;
+    @media #{$sp} {
+      margin-bottom: 15px;
+    }
+  }
+
+}

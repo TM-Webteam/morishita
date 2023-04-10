@@ -1,0 +1,108 @@
+/*
+  ----------------
+  catalog
+  ----------------
+*/
+
+.arc-catalog {
+
+  .hero-lower {
+    height: 320px;
+    background: url("../img/catalog/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      width: 100%;
+      &--sub {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 30px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    &__img {
+      width: 30%;
+      text-align: center;
+      overflow: hidden;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        transition: all .3s;
+      }
+    }
+    &__box {
+      width: calc(100% - 30% - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &--txt {
+        margin-bottom: 30px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        max-width: 360px;
+        margin: 0;
+        font-size: 16px;
+        transition: all .3s;
+        @media #{$sp} {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      .card__img img {
+        transform: scale(1.1);
+      }
+      .more.bgY {
+        background: #fff;
+        color: #f7a307;
+      }
+    }
+  }
+
+  
+  
+
+  
+}
+

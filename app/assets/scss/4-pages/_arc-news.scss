@@ -1,0 +1,78 @@
+/*
+  ----------------
+  arc-news
+  ----------------
+*/
+
+.arc-news {
+
+  .news {
+    .containers {
+      max-width: 880px;
+    }
+    .item {
+      
+      &__box {
+        display: block;
+        padding: 30px 0;
+        border-bottom: 1px solid #DDDDDD;
+        @media #{$sp} {
+          padding: 15px 0;
+        }
+        &--date {
+          margin-bottom: 15px;
+          @media #{$sp} {
+            margin-bottom: 10px;
+          }
+          .time {
+            display: inline-block;
+            color: #666666;
+          }
+          .cat {
+            display: inline-block;
+            text-align: center;
+            line-height: 1.4;
+            font-size: 14px;
+            padding: 5px 15px;
+            color: #fff;
+            background: #00A0E9;
+            @media #{$sp} {
+              font-size: 12px;
+              padding: 5px;
+            }
+            &.doc {
+              background: #187FC4;
+            }
+            &.semi {
+              background: #F0595B;
+            }
+            &.new {
+              background: #71BF44;
+            }
+            &.other {
+              background: #888888;
+            }
+            &.v1 {
+              background: #A053B1;
+            }
+            &.v2 {
+              background: #00B6BC;
+            }
+          }
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: bold;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          @media #{$sp} {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+}

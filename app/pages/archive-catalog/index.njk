@@ -1,0 +1,77 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="arc-catalog">
+
+  <section class="hero-lower core">
+    <div class="containers">
+      <div class="hero-lower__box">
+        <h1 class="ttl-primary">商品の差別化に役立つ森下仁丹の<br class="sp-only">サービス資料</h1>
+        <div class="hero-lower__box--sub">機能性原料からシームレスカプセル技術の資料まで<br class="pc-only">無料でダウンロードできますので是非ご覧ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="containers">
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/assets/img/catalog/img-card01.jpg" alt="体脂肪ケア素材　ローズヒップエキス"></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more small bgY">資料の詳細・ダウンロードはこちら</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/assets/img/catalog/img-card02.jpg" alt="アイケア素材　カシスエキス"></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more small bgY">資料の詳細・ダウンロードはこちら</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/assets/img/catalog/img-card03.jpg" alt="糖ケア素材　サラシアエキス"></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more small bgY">資料の詳細・ダウンロードはこちら</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/assets/img/catalog/img-card04.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more small bgY">資料の詳細・ダウンロードはこちら</div>
+        </summary>
+      </a>
+      
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

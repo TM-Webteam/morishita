@@ -1,0 +1,23 @@
+/*
+  ----------------
+  salacia
+  ----------------
+*/
+
+.salacia {
+
+  .hero-lower {
+    background: url("../img/salacia/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/salacia/bg-hero.webp") 30% 50% / cover no-repeat;
+    }
+    &__img {
+      width: calc(100% - 51% - 80px);
+      @media #{$sp} {
+        width: 85%;
+      }
+    }
+  }
+  
+}
+

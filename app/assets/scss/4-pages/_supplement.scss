@@ -1,0 +1,58 @@
+/*
+  ----------------
+  supplement
+  ----------------
+*/
+
+.supplement {
+
+  .hero-lower {
+    background: url("../img/supplement/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/supplement/bg-hero.webp") 80% 50% / cover no-repeat;
+    }
+  }
+
+  .feature {
+    .card {
+      position: relative;
+      padding: 40px 30px 30px;
+      @media #{$sp} {
+        padding: 40px 15px 15px;
+      }
+      &:not(:last-child) {
+        @media #{$sp} {
+          margin-bottom: 20px;
+        }
+      }
+      &__ttl {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -15px;
+        margin: auto;
+        background: #0D5BAB;
+        padding: 3px 5px;
+        color: #fff;
+        font-weight: 500;
+        width: 150px;
+        @media #{$sp} {
+          width: 120px;
+          top: -15px;
+        }
+      }
+    }
+  }
+
+  .flow {
+    &__img {
+      width: 68%;
+      margin: 0 auto;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+  }
+  
+}
+

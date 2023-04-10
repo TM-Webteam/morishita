@@ -1,0 +1,171 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="diff">
+
+  <section class="hero-lower core">
+    <div class="containers">
+      <div class="hero-lower__box">
+        <div class="hero-lower__box--sub"><span class="marker">サプリメントや加工食品、<br class="sp-only">医薬品の商品開発部門の担当者様へ</span></div>
+        <h1 class="ttl-primary">差別化できる加工食品や飲料などの<br>商品開発をサポートします。</h1>
+        <div class="speech"><span>原料の供給から、商品の企画開発まで。<br class="sp-only">お気軽にご相談ください。</span></div>
+        <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="needs">
+    <div class="containers">
+      <h2 class="ttl-secondary">こんな企業様におすすめです。</h2>
+      <div class="flex gap30 card">
+        <a href="#case01" class="card__box">
+          <div class="card__box--ttl core">差別化のネタが見つからない</div>
+          <figure class="card__box--img"><img src="/assets/img/diff/img-needs01.jpg" alt="差別化のネタが見つからない"></figure>
+        </a>
+        <a href="#case02" class="card__box">
+          <div class="card__box--ttl core">機能性原料が見つからない<br>使い方がわからない</div>
+          <figure class="card__box--img"><img src="/assets/img/diff/img-needs02.jpg" alt="機能性原料が見つからない使い方がわからない"></figure>
+        </a>
+        <a href="#case03" class="card__box">
+          <div class="card__box--ttl core">機能性表示食品の届出業務を<br>サポートしてほしい</div>
+          <figure class="card__box--img"><img src="/assets/img/diff/img-needs03.jpg" alt="機能性表示食品の届出業務をサポートしてほしい"></figure>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="instance bg-B">
+    <div class="containers">
+
+      <div id="case01" class="card">
+        <div class="card__ttl">「<span>差別化のネタが見つからない</span>」<br class="sp-only">という企業様へ</div>
+        <div class="flex gap30 sp-reverse card__box">
+          <dl class="card__box--txt">
+            <dt>独自の原料素材とシームレスカプセル技術で<br>差別化できる商品開発をサポート</dt>
+            <dd>多くの自社商品を開発・製造してきた森下仁丹ならではのノウハウを活用し、商品設計や機能性原料の供給、シームレスカプセルでの製造、充填、包装まで一気通貫でサポート。商品に付加価値をつけ、競合他社との差別化ができるネタをご提供します。</dd>
+          </dl>
+          <figure class="card__box--img"><img src="/assets/img/diff/img-instance01.jpg" alt=""></figure>
+        </div>
+      </div>
+
+      <div id="case02" class="card">
+        <div class="card__ttl">「<span>機能性原料が見つからない、<br class="sp-only">使い方がわからない</span>」という企業様へ</div>
+        <div class="flex gap30 card__box">
+          <figure class="card__box--img"><img src="/assets/img/diff/img-instance02.jpg" alt=""></figure>
+          <dl class="card__box--txt">
+            <dt>厳選された良質な機能性原料の供給と<br>その活用方法までご提案</dt>
+            <dd>1893年の創業以来、植物由来原料の販売を行う薬種商として培ってきた知識・ノウハウを基に厳選された良質な素材を提供します。脂肪燃焼に有効性を発揮するローズヒップポリフェノールや糖の吸収を抑えるサラシア、目の健康を維持するアントシアニンが含まれるカシスについては、原料の供給のみならず、原料をどのように活用できるのかまでご提案いたします。</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div id="case03" class="card">
+        <div class="card__ttl">「<span>機能性表示食品の届出業務を<br class="sp-only">サポートしてほしい</span>」という企業様へ</div>
+        <div class="flex gap30 sp-reverse card__box">
+          <dl class="card__box--txt">
+            <dt>機能性表示食品の制度づくりを進めてきた<br>当社ならではのエビデンス作り、届出のサポート</dt>
+            <dd>機能性表示食品の取得には、ヘルスクレーム企画から臨床試験などのエビデンス作り、届出書類の作成など、さまざまな手順が存在します。機能性表示食品のガイドラインがわからない、あるいは自社で機能性表示の届出まで完結できる知識・ノウハウが無いという企業様には、制度策定の中心メンバーならではの視点で徹底的にサポートいたします。</dd>
+          </dl>
+          <figure class="card__box--img"><img src="/assets/img/diff/img-instance03.jpg" alt=""></figure>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="selection bg-pattern">
+    <div class="containers">
+      <h2 class="ttl-secondary">原料供給、カプセル受託、<br class="sp-only">サプリメントOEM受託まで</h2>
+      <div class="lead">個別のご依頼から、トータルサポートまで<br class="sp-only">対応可能です。</div>
+      <ul class="flex gap30">
+        <li class="card">
+          <div class="card__ttl bgB">原料供給</div>
+          <summary class="card__box">
+            <div class="card__box--ttl">話題の機能性成分を含む<br>独自素材の供給が可能</div>
+            <a href="/rosehip_polyphenol/" class="more">ローズヒップポリフェノール</a>
+            <a href="/cassis/" class="more">カシスエキス</a>
+            <a href="/salacia/" class="more">サラシアエキス</a>
+          </summary>
+        </li>
+        <li class="card">
+          <div class="card__ttl bgG">シームレスカプセル受託</div>
+          <summary class="card__box">
+            <div class="card__box--ttl">他社にはない<br>独自のシームレスカプセル技術</div>
+            <a href="/seamless_capsule/" class="more">シームレスカプセル受託</a>
+          </summary>
+        </li>
+        <li class="card">
+          <div class="card__ttl bgG">サプリメントOEM受託</div>
+          <summary class="card__box">
+            <div class="card__box--ttl">商品設計から製造、充填、<br>包装まで一貫生産</div>
+            <a href="/supplement_oem/" class="more">サプリメントOEM受託</a>
+          </summary>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec-wp">
+    <div class="containers">
+      <div class="flex aiC jcC gap30 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp01.png" alt=""></figure>
+        <summary class="desc__box">
+          <div class="desc__box--ttl">差別化をサポートする<br>森下仁丹のサービス資料</div>
+          <a href="/whitepaper/" class="more bgY small">サービス資料をダウンロード</a>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">規模・業界問わず多くの企業様に<br class="sp-only">ご利用いただいております。</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo-cocacola.svg" alt="コカ・コーラ"></li>
+        <li><img src="/assets/img/common/logo-uha.svg" alt="UHA味覚糖"></li>
+        <li><img src="/assets/img/common/logo-suntory.svg" alt="Suntory"></li>
+        <li><img src="/assets/img/common/logo-yamasa.svg" alt="ヤマサ醤油株式会社"></li>
+        <li><img src="/assets/img/common/logo-yoshinoya.svg" alt="吉野家"></li>
+        <li><img src="/assets/img/common/logo-luna.svg" alt="日本ルナ株式会社"></li>
+        <li><img src="/assets/img/common/logo-kinzirushi.svg" alt="金印わさび"></li>
+      </ul>
+      <a href="/case/" class="more">実績・事例を見る</a>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">サービスに関するお問合せ・ご相談</h2>
+      <div class="lead">原料の供給から差別化できる商品開発のご相談まで、<br class="sp-only">お気軽にご相談ください。</div>
+      <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more bgY tiny">サービス資料</a>
+          <a href="/whitepaper/" class="more bgY tiny">お役立ち資料</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

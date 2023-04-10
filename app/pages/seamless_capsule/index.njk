@@ -1,0 +1,242 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="seamless">
+
+  <section class="hero-lower core">
+    <div class="containers flex aiC sp-reverse">
+      <div class="hero-lower__box">
+        <div class="hero-lower__box--sub">小粒径が可能で内包物の<br class="sp-only">選択肢が広い。</div>
+        <h1 class="ttl-primary">シームレスカプセル受託</h1>
+        <figure class="hero-lower__box--img sp-only"><img src="/assets/img/seamless/img-hero.png" alt="シームレスカプセル受託"></figure>
+        <ul class="flex inherit hero-lower__box--effect">
+          <li>継ぎ目がなく<br>真球に近い</li>
+          <li>さまざまな<br>粒径サイズに調整可</li>
+          <li>皮膜の厚さを<br>調節可能</li>
+        </ul>
+        <div class="cta-btn">
+          <div class="balloon"><span class="balloon__txt">差別化をサポートする森下仁丹のサービス資料</span></div>
+          <a href="/catalog/" class="more bgY">サービス資料ダウンロード</a>
+          <summary class="tooltip">お申込み後、リアルタイムでお送りいたします！</summary>
+        </div>
+      </div>
+      <figure class="hero-lower__img pc-only"><img src="/assets/img/seamless/img-hero.png" alt="シームレスカプセル受託"></figure>
+    </div>
+  </section>
+
+  <section class="anc">
+    <div class="containers">
+      <ul class="flex jcC gap30 inherit anc__box">
+        <li><a href="#about">サービス概要</a></li>
+        <li><a href="#feature">特長</a></li>
+        <li><a href="#comparison">他カプセルとの比較</a></li>
+        <li><a href="#usage">用途例</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="about sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>シームレスカプセル技術とは</small>独自開発し、あらゆる分野への応用と高い品質を追い求めてきた技術です。</h2>
+      <div class="flex aiC sp-reverse">
+        <dl class="about__box">
+          <dt>医薬品から食品、産業用まで<br>さまざまな用途で活用されています。</dt>
+          <dd>粉末、液体、微生物などあらゆるものを包むことができ、また皮膜の調整により、ドラッグデリバリーシステムを実現する医薬品から、食品、産業用まであらゆる分野への展開が可能です。</dd>
+        </dl>
+        <figure class="about__img"><img src="/assets/img/seamless/img-about.jpg" alt="医薬品から食品、産業用までさまざまな用途で活用されています。"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" class="support sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>特長</small>シームレスカプセルは4つの特長を<br class="sp-only">持っています。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/seamless/img-feature01.png" alt="優れた製剤精度"></figure>
+          <dl class="card__box">
+            <dt>優れた製剤精度</dt>
+            <dd>粒子サイズ、重量等を10％以下のバラツキで制御可能。これにより、精度の高い機能性の付与が可能です。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/seamless/img-feature02.png" alt="滴下法特有の自由な粒子サイズ"></figure>
+          <dl class="card__box">
+            <dt>滴下法特有の自由な粒子サイズ</dt>
+            <dd>0.5mm～8mmの範囲で自由に粒子サイズを調整可能です。一般的なソフトカプセルと比較して小さい粒子サイズのカプセルが作製可能です。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/seamless/img-feature03.png" alt="多層構造皮膜"></figure>
+          <dl class="card__box">
+            <dt>多層構造皮膜</dt>
+            <dd>さまざまな機能付与（有効成分の徐放吸放出、遮光遮蔽性等）や様々な物質（親水性、疎水性、粉末、粉体（スラリー））の内包が可能です。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/seamless/img-feature04.png" alt="様々な皮膜組成"></figure>
+          <dl class="card__box">
+            <dt>様々な皮膜組成</dt>
+            <dd>ゼラチンや寒天等の天然高分子から、アクリル、ウレタン等の合成樹脂まで様々な皮膜でのカプセル化が可能です。</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="comparison" class="comparison sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>他カプセルとの比較</small>サイズの極小化や内包物の選択肢を増やすことができます。</h2>
+      <div class="scroll">
+        <table class="comparison__table">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <tr>
+            <th></th>
+            <th>シームレスカプセル</th>
+            <th>ソフトカプセル</th>
+            <th>ハードカプセル</th>
+          </tr>
+          <tr>
+            <th>形状</th>
+            <td><img src="/assets/img/seamless/img-capsule01.png" alt="シームレスカプセル"></td>
+            <td><img src="/assets/img/seamless/img-capsule02.png" alt="ソフトカプセル"></td>
+            <td><img src="/assets/img/seamless/img-capsule03.png" alt="ハードカプセル"></td>
+          </tr>
+          <tr>
+            <th>特長</th>
+            <td>小粒径が可能<br>多層化技術により<br>内包物の選択肢が広い</td>
+            <td>小粒径はできない</td>
+            <td>小粒径はできない<br>粉末内包がメイン</td>
+          </tr>
+          <tr>
+            <th>粒径</th>
+            <td>0.5～8mm</td>
+            <td>5~20mm<br>（主要サイズ）</td>
+            <td>10~25mm<br>（主要サイズ）</td>
+          </tr>
+          <tr>
+            <th>内包率</th>
+            <td>~90%</td>
+            <td>~70%</td>
+            <td>~80%</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" class="usage sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>用途例</small>シームレスカプセルは、さまざまな業界・用途で活用されています。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          <div class="card__ttl">可食性カプセル</div>
+          <ul class="card__list">
+            <li>サプリメント</li>
+            <li>健康食品</li>
+            <li>食品</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card__ttl">医薬品カプセル</div>
+          <ul class="card__list">
+            <li>口腔速容性カプセル</li>
+            <li>カプセル  in カプセル</li>
+            <li>pH依存崩壊、腸溶性カプセル</li>
+            <li>大腸崩壊カプセル</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card__ttl">産業用カプセル</div>
+          <ul class="card__list">
+            <li>建築、機械（触媒・硬化剤・蓄熱・軽量化等）</li>
+            <li>資源（希少金属回収・環境保全等）</li>
+            <li>生活（害虫駆除剤・化粧品等）</li>
+            <li>農業（人工種子・農薬等）</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="reason sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>選ばれる理由</small>独自の原料素材、シームレスカプセル技術、<br class="pc-only">機能性表示食品における当社ならではのサポート力が選ばれる理由です。</h2>
+      <ul class="flex gap30 item">
+        <li class="item__box">
+          <div class="item__box--num core">1</div>
+          <div class="item__box--ttl">1893年創業の確かな鑑定眼と<br>豊富な知識・ノウハウ</div>
+          <figure class="item__box--img"><img src="/assets/img/common/img-reason01.jpg" alt="1893年創業の確かな鑑定眼と豊富な知識・ノウハウ"></figure>
+        </li>
+        <li class="item__box">
+          <div class="item__box--num core">2</div>
+          <div class="item__box--ttl">差別化できる<br>商品開発のサポート</div>
+          <figure class="item__box--img"><img src="/assets/img/common/img-reason02.jpg" alt="差別化できる商品開発のサポート"></figure>
+        </li>
+        <li class="item__box">
+          <div class="item__box--num core">3</div>
+          <div class="item__box--ttl">機能性表示食品制度づくりの<br>中心メンバーならではの知識</div>
+          <figure class="item__box--img"><img src="/assets/img/common/img-reason03.jpg" alt="機能性表示食品制度づくりの中心メンバーならではの知識"></figure>
+        </li>
+      </ul>
+      <a href="/strength/" class="more">詳しくはこちら</a>
+    </div>
+  </section>
+
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">規模・業界問わず多くの企業様に<br class="sp-only">ご利用いただいております。</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo-cocacola.svg" alt="コカ・コーラ"></li>
+        <li><img src="/assets/img/common/logo-uha.svg" alt="UHA味覚糖"></li>
+        <li><img src="/assets/img/common/logo-suntory.svg" alt="Suntory"></li>
+        <li><img src="/assets/img/common/logo-yamasa.svg" alt="ヤマサ醤油株式会社"></li>
+        <li><img src="/assets/img/common/logo-yoshinoya.svg" alt="吉野家"></li>
+        <li><img src="/assets/img/common/logo-luna.svg" alt="日本ルナ株式会社"></li>
+        <li><img src="/assets/img/common/logo-kinzirushi.svg" alt="金印わさび"></li>
+      </ul>
+      <a href="/case/" class="more">実績・事例を見る</a>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">サービスに関するお問合せ・ご相談</h2>
+      <div class="lead">原料の供給から差別化できる商品開発のご相談まで、<br class="sp-only">お気軽にご相談ください。</div>
+      <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more bgY tiny">サービス資料</a>
+          <a href="/whitepaper/" class="more bgY tiny">お役立ち資料</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,216 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <nav class="pagination">
+		<div class="nav-links">
+      <a class="prev page-numbers" href="#"><span></span></a>
+      <a class="page-numbers" href="#">1</a>
+      <span class="page-numbers current">2</span>
+      <a class="page-numbers" href="#">3</a>
+      <a class="next page-numbers" href="#"><span></span></a>
+    </div>
+	</nav>
+
+  <a href="#" class="more">実績・事例を見る</a>
+  <a href="#" class="more frame">実績・事例を見る</a>
+  <a href="#" class="more bgY">サービス資料ダウンロード</a>
+  <a href="#" class="more bgY small">実績・事例を見る</a>
+  <a href="#" class="more bgY tiny">サービス資料</a>
+  <a href="#" class="more small">実績・事例を見る</a>
+  <a href="#" class="more tiny">サービス資料</a>
+  <a href="#" class="more bgY wp-thumb">サービス資料ダウンロード</a>
+
+  <div class="cta-btn">
+    <div class="balloon"><span class="balloon__txt">差別化をサポートする森下仁丹のサービス資料</span></div>
+    <a href="/catalog/" class="more bgY wp-thumb">サービス資料ダウンロード</a>
+    <summary class="tooltip">お申込み後、リアルタイムでお送りいたします！</summary>
+  </div>
+
+  <div class="speech"><span>差別化した商品開発をサポートいたします。</span></div>
+  <a href="#" class="more">詳しくはこちら</a>
+
+  <h1 class="ttl-primary">トップの文言が<br>入ります</h1>
+
+  <h1 class="ttl-primary-lower">下層ページの文言が入ります</h1>
+
+  <h2 class="ttl-secondary">規模・業界問わず多くの企業様にご利用いただいております。</h2>
+
+  <h2 class="ttl-secondary"><small>カシスエキスMJとは</small>目の健康を整える機能を自社商品にプラスできる機能性原料です。</h2>
+
+  <h2 class="ttl-secondary rack"><small>ローズヒップポリフェノールとは</small>体脂肪を減らす機能を自社製品にプラスできる機能性原料です。</h2>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">サービスに関するお問合せ・ご相談</h2>
+      <div class="lead">原料の供給から差別化できる商品開発のご相談まで、<br class="sp-only">お気軽にご相談ください。</div>
+      <a href="/contact/" class="more bgY">お問合せ・ご相談はこちら</a>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more bgY tiny">サービス資料</a>
+          <a href="/whitepaper/" class="more bgY tiny">お役立ち資料</a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+  <section class="praise">
+    <div class="containers">
+      <h2 class="ttl-secondary">規模・業界問わず多くの企業様に<br class="sp-only">ご利用いただいております。</h2>
+      <ul class="flex praise__box">
+        <li><img src="/assets/img/common/logo-cocacola.svg" alt="コカ・コーラ"></li>
+        <li><img src="/assets/img/common/logo-uha.svg" alt="UHA味覚糖"></li>
+        <li><img src="/assets/img/common/logo-suntory.svg" alt="Suntory"></li>
+        <li><img src="/assets/img/common/logo-yamasa.svg" alt="ヤマサ醤油株式会社"></li>
+        <li><img src="/assets/img/common/logo-yoshinoya.svg" alt="吉野家"></li>
+        <li><img src="/assets/img/common/logo-luna.svg" alt="日本ルナ株式会社"></li>
+        <li><img src="/assets/img/common/logo-kinzirushi.svg" alt="金印わさび"></li>
+      </ul>
+      <a href="/case/" class="more">実績・事例を見る</a>
+    </div>
+  </section>
+
+  <section class="hero-lower core">
+    <div class="containers flex aiC sp-reverse">
+      <div class="hero-lower__box">
+        <div class="hero-lower__box--sub">体脂肪を減らす機能を<br class="sp-only">自社製品にスムーズにプラス。</div>
+        <h1 class="ttl-primary">ローズヒップポリフェノール</h1>
+        <figure class="hero-lower__box--img sp-only"><img src="/assets/img/rosehip/img-hero.png" alt=""></figure>
+        <ul class="flex inherit hero-lower__box--effect">
+          <li>味や見た目に<br>影響を与えにくい</li>
+          <li>応用しやすい<br>水溶性</li>
+          <li>少量で<br>有効性を発揮</li>
+        </ul>
+        <div class="cta-btn">
+          <div class="balloon"><span class="balloon__txt">特徴・各種エビデンス・受理状況が分かる！</span></div>
+          <a href="/catalog/" class="more bgY">サービス資料ダウンロード</a>
+          <summary class="tooltip">お申込み後、リアルタイムでお送りいたします！</summary>
+        </div>
+      </div>
+      <figure class="hero-lower__img pc-only"><img src="/assets/img/rosehip/img-hero.png" alt=""></figure>
+    </div>
+  </section>
+
+  <section class="anc">
+    <div class="containers">
+      <ul class="flex jcC gap30 inherit anc__box">
+        <li><a href="#about">素材概要</a></li>
+        <li><a href="#feature">特長</a></li>
+        <li><a href="#case-study">開発商品例</a></li>
+        <li><a href="#support">サポート</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="about sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>ローズヒップポリフェノールとは</small>体脂肪を減らす機能を自社製品にプラスできる機能性原料です。</h2>
+      <div class="flex aiC sp-reverse">
+        <dl class="about__box">
+          <dt>ローズヒップ丸ごと果実から抽出した<br>脂肪燃焼促進型の体脂肪減少素材</dt>
+          <dd>脂肪の代謝を促進し，体脂肪を低減します。機能性関与成分はティリロサイド(Tiliroside)であり、森下仁丹の特許取得成分です。（特許4229942号）</dd>
+        </dl>
+        <figure class="about__img"><img src="/assets/img/rosehip/img-about.jpg" alt="ローズヒップ丸ごと果実から抽出した脂肪燃焼促進型の体脂肪減少素材"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" class="feature sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>特長</small>サラシアエキスは商品化しやすい特長を持っています。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/rosehip/img-feature01.png" alt="味や見た目に影響を与えにくい"></figure>
+          <dl class="card__box">
+            <dt>味や見た目に影響を与えにくい</dt>
+            <dd>植物エキス特有の苦みや渋みが少なく、色素も気にならないため、応用商品の味や見た目に影響しません。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/rosehip/img-feature02.png" alt="応用しやすい水溶性"></figure>
+          <dl class="card__box">
+            <dt>応用しやすい水溶性</dt>
+            <dd>水溶性の粉末エキスのため、飲料やキャンディなど、さまざまな商品に応用することができます。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/rosehip/img-feature03.png" alt="少量で有効性を発揮"></figure>
+          <dl class="card__box">
+            <dt>少量で有効性を発揮</dt>
+            <dd>少量で有効性を発揮※するので、複数の機能性関与成分を含んだ商品を開発できます。<div class="note">※100 mg/日，Tilirosideとして0.1 mg</div></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="support" class="support sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>サポート</small>原料の供給のみならず、<br>機能性表示食品としての商品開発や<br class="sp-only">売り方のサポートも可能です。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-support01.png" alt="機能性表示食品としての開発サポート"></figure>
+          <dl class="card__box">
+            <dt>機能性表示食品としての開発サポート</dt>
+            <dd>機能性表示食品の取得には、さまざまな手順が存在します。機能性表示食品の制度づくりの中心メンバーならではの視点で徹底的にサポートいたします。</dd>
+          </dl>
+        </li>
+        <li class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-support02.png" alt="お客様に選んでいただくためのサポート"></figure>
+          <dl class="card__box">
+            <dt>お客様に選んでいただくためのサポート</dt>
+            <dd>原料の供給だけではなく、使い方の提案や原料の啓蒙活動を通じて、お客様に選んでいただくお手伝いをします。自社ブランド商品の販売実績もあるので、「売り方」のサポートも可能です。</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec-wp">
+    <div class="containers">
+      <div class="flex aiC gap30 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp01.png" alt=""></figure>
+        <summary class="desc__box">
+          <div class="desc__box--sub">コロナ禍で高まる健康意識と肥満/体重増加に対する課題感</div>
+          <div class="desc__box--ttl">ローズヒップポリフェノールを活用した<br>機能性表示食品開発のご提案</div>
+          <a href="/whitepaper/" class="more bgY small">ホワイトペーパーダウンロード</a>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+  <section class="reason sec-B">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>選ばれる理由</small>独自の原料素材、シームレスカプセル技術、<br>機能性表示食品における当社ならではのサポート力が選ばれる理由です。</h2>
+      <ul class="flex gap30">
+        <li class="card">
+          
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+</main>
+
+{% endblock %}

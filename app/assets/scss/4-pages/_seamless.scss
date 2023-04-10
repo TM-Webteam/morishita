@@ -1,0 +1,143 @@
+/*
+  ----------------
+  seamless
+  ----------------
+*/
+
+.seamless {
+
+  .hero-lower {
+    background: url("../img/seamless/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      background: url("../img/seamless/bg-hero.webp") 80% 50% / cover no-repeat;
+    }
+    &__img {
+      width: calc(100% - 51% - 20px);
+      img {
+        max-width: 378px;
+        @media #{$sp} {
+          max-width: 100%;
+        }
+      }
+      @media #{$sp} {
+        width: 85%;
+      }
+    }
+  }
+
+  .comparison {
+    &__table {
+      @media #{$sp} {
+        width: 700px;
+      }
+      col {
+        &:nth-child(1) {
+          width: 10%;
+        }
+        &:nth-child(2) {
+          width: 30%;
+        }
+        &:nth-child(3) {
+          width: 30%;
+        }
+        &:nth-child(4) {
+          width: 30%;
+        }
+      }
+      th,td {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #111;
+        background: #fff;
+        @media #{$sp} {
+          padding: 10px;
+        }
+      }
+      td {
+        img {
+          width: auto;
+          height: 110px;
+          @media #{$sp} {
+            height: 80px;
+          }
+        }
+      }
+      tr {
+        th {
+          font-size: 18px;
+          color: #295AA5;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
+        &:first-child {
+          th {
+            background: transparent;
+            font-size: 20px;
+            color: #000;
+            @media #{$sp} {
+              font-size: 16px;
+            }
+            &:nth-child(2) {
+              background: #295AA5;
+              color: #fff;
+            }
+          }
+        }
+        td {
+          &:nth-child(2) {
+            background: #FAEBEB;
+          }
+        }
+      }
+    }
+  }
+
+  .usage {
+    .card {
+      width: calc(100% / 3 - 20px);
+      background: #fff;
+      padding: 30px;
+      @media #{$sp} {
+        width: 100%;
+        padding: 15px;
+      }
+      &__ttl {
+        text-align: center;
+        color: #0D5BAB;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        @media #{$sp} {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+      }
+      &__list {
+        font-weight: bold;
+        li {
+          padding-left: 1.5em;
+          position: relative;
+          &::before {
+            content: "●";
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &:not(:last-child) {
+            margin-bottom: 10px;
+            @media #{$sp} {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reason.sec-B {
+    background: url("../img/seamless/bg-reason.webp") 50% / cover no-repeat;
+  }
+  
+}
+

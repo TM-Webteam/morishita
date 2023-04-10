@@ -1,0 +1,385 @@
+/*
+  ----------------
+  TOP
+  ----------------
+*/
+
+.top {
+
+  .hero {
+    background: url("../img/top/bg-hero.webp") 50% / cover no-repeat;
+    color: #fff;
+    @media #{$sp} {
+      background: url("../img/top/bg-hero.webp") 70% 50% / cover no-repeat;
+      text-align: center;
+    }
+    &__sub {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      @media #{$sp} {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.8;
+      }
+      span {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px;
+        @media #{$sp} {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 0;
+        }
+      }
+      rt {
+        font-size: 16px;
+        @media #{$sp} {
+          font-size: 12px;
+        }
+      }
+    }
+    &__lead {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 60px;
+      @media #{$sp} {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+    }
+    &__btn {
+      .more {
+        width: 400px;
+        height: 80px;
+        max-width: none;
+        font-size: 16px;
+        margin: 0;
+        @media #{$sp} {
+          width: 100%;
+          height: auto;
+          font-size: 14px;
+          margin: 0 auto;
+        }
+        &.core {
+          // margin-bottom: 25px;
+          @media #{$sp} {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      .cta-btn {
+        margin: 0 0 0 15px;
+        @media #{$sp} {
+          margin: 0 auto;
+          width: 100%;
+        }
+        .more {
+          font-size: 20px;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
+      } 
+    }
+  }
+
+  .product {
+    .item {
+      margin-bottom: 60px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+      &__box {
+        display: block;
+        width: calc(100% / 3 - 20px);
+        text-align: center;
+        position: relative;
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        margin-bottom: 30px;
+        @media #{$sp} {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .telop {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -17px;
+          margin: auto;
+          z-index: 3;
+          @media #{$sp} {
+            top: -15px;
+          }
+          span {
+            display: inline-block;
+            padding: 3px 15px;
+            color: #fff;
+            font-weight: 500;
+            background: #57B2D4;
+            &.oem {
+              background: #A5AB0E;
+            }
+          }
+        }
+        &--img {
+          overflow: hidden;
+          img {
+            transition: all .3s;
+          }
+        }
+        &--ttl {
+          padding: 30px 15px;
+          font-size: 20px;
+          font-weight: bold;
+          @media #{$sp} {
+            padding: 15px;
+            font-size: 16px;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 0 10px rgba(0,0,0,0.4);
+          .item__box--img img {
+            transform:scale(1.1,1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .needs {
+    .card {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+      &__box {
+        width: calc(100% / 3 - 20px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        &:not(:last-child) {
+          @media #{$sp} {
+            margin-bottom: 15px;
+          }
+        }
+        &--ttl {
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 15px 30px;
+          height: 90px;
+          background: #222222;
+          @media #{$sp} {
+            font-size: 16px;
+            padding: 15px;
+            height: auto;
+          }
+        }
+        &--img {
+
+        }
+      }
+    }
+  }
+
+  .useful-wp {
+    background: url("../img/top/bg-wp.webp") 50% / cover no-repeat;
+    .lead {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      @media #{$sp} {
+        font-size: 14px;
+      }
+    }
+    .card {
+      display: block;
+      width: calc(100% / 2 - 20px);
+      background: #fff;
+      @media #{$sp} {
+        width: 100%;
+      }
+      &__img {
+        background: #F6F6F6;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 0;
+        @media #{$sp} {
+          padding: 15px;
+        }
+        img {
+          max-width: none;
+          width: auto;
+          height: 220px;
+          transition: all .3s;
+          @media #{$sp} {
+            height: 150px;
+          }
+        }
+      }
+      &__box {
+        background: #fff;
+        padding: 30px;
+        @media #{$sp} {
+          padding: 15px;
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          @media #{$sp} {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+        &--txt {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          margin-bottom: 30px;
+          @media #{$sp} {
+            margin-bottom: 15px;
+          }
+        }
+        .more {
+          font-size: 16px;
+          transition: all .3s;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
+      }
+      &:hover {
+        opacity: 1;
+        .more.bgY {
+          background: #fff;
+          color: #F7A307;
+          border: 3px solid #F7A307;
+          &::before {
+            border-top: solid 3px #F7A307;
+            border-right: solid 3px #F7A307;
+          }
+        }
+        .card__img img {
+          transform:scale(1.1,1.1);
+        }
+      }
+    }
+    .flex.gap30 {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .info {
+    .card {
+      &__box {
+        width: calc(100% / 2 - 20px);
+        background: #fff;
+        padding: 30px;
+        @media #{$sp} {
+          width: 100%;
+          padding: 15px;
+        }
+        &--img {
+          width: 100px;
+          @media #{$sp} {
+            text-align: center;
+          }
+        }
+        &--txt {
+          width: calc(100% - 100px - 20px);
+          transition: all .3s;
+          @media #{$sp} {
+            width: 100%;
+          }
+          dt {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            @media #{$sp} {
+              text-align: center;
+            }
+          }
+          dd {
+
+          }
+        }
+        &:hover {
+          opacity: 1;
+          .card__box--txt {
+            color: #0D5BAB;
+          }
+        }
+      }
+    }
+  }
+
+  .news {
+    .containers {
+      max-width: 920px;
+    }
+    &__box {
+      display: block;
+      padding: 20px 0;
+      border-bottom: 1px dashed #999;
+      @media #{$sp} {
+        width: 100%;
+        padding: 15px 0;
+      }
+      &--item {
+        dt {
+          width: 240px;
+          @media #{$sp} {
+            width: 100%;
+          }
+          .time {
+            font-size: 14px;
+            @media #{$sp} {
+              font-size: 12px;
+              margin-right: 15px;
+            }
+          }
+          .cat {
+            display: inline-block;
+            text-align: center;
+            min-width: 110px;
+            padding: 3px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #fff;
+            background: #00A0E9;
+            &.alter {
+              background: #187FC4;
+            }
+          }
+        }
+        dd {
+          width: calc(100% - 240px - 50px);
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          @media #{$sp} {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .more {
+      margin-top: 70px;
+      @media #{$sp} {
+        margin-top: 30px;
+      }
+    }
+  }
+
+}
