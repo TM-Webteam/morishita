@@ -23,6 +23,12 @@ header {
         padding: 10px;
         width: 95px;
       }
+      a {
+        width: 140px;
+        @media #{$sp} {
+          width: 75px;
+        }
+      }
     }
     &__nav {
       width: 450px;

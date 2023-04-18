@@ -54,13 +54,15 @@
 
       <section class="form">
         <div class="containers">
-          <script type="text/javascript">
-            var K3_acct = "morishitajintan";
-            var K3_campcode = "<?php echo CFS()->get('form_id'); ?>";
-            var K3_width = "auto";
-            var K3_height = "auto";
-          </script>
-          <script type="text/javascript" src="https://form.k3r.jp/embed/"></script>
+          <div id="frame_div">
+            <script type="text/javascript">
+              var K3_acct = "morishitajintan";
+              var K3_campcode = "<?php echo CFS()->get('form_id'); ?>";
+              var K3_width = "auto";
+              var K3_height = "auto";
+            </script>
+            <script type="text/javascript" src="https://form.k3r.jp/embed/"></script>
+          </div>
         </div>
       </section>
 

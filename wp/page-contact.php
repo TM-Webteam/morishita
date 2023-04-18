@@ -17,8 +17,10 @@
         <p>● 以下フォームにご連絡先、お問合せ内容をご記入の上、送信してください。担当よりご連絡申し上げます。</p>
         <p>● 回答までにお時間をいただく場合や、回答ができない場合もございますので、ご了承ください。</p>
       </div>
-      <script type="text/javascript">var K3_acct = "morishitajintan";var K3_campcode = "contact";var K3_width = "auto";var K3_height = "auto";</script>
-      <script type="text/javascript" src="https://form.k3r.jp/embed/"></script>
+      <div id="frame_div">
+        <script type="text/javascript">var K3_acct = "morishitajintan";var K3_campcode = "contact";var K3_width = "auto";var K3_height = "auto";</script>
+        <script type="text/javascript" src="https://form.k3r.jp/embed/"></script>
+      </div>
     </div>
   </section>
 
