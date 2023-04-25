@@ -134,7 +134,7 @@
       <h2 class="ttl-secondary rack"><small>用途例</small>シームレスカプセルは、さまざまな業界・用途で活用されています。</h2>
       <ul class="flex gap30">
         <li class="card">
-          <h3 class="card__ttl">可食性カプセル</h3>
+          <h3 class="card__ttl">食品用カプセル</h3>
           <ul class="card__list">
             <li>サプリメント</li>
             <li>健康食品</li>
@@ -142,12 +142,11 @@
           </ul>
         </li>
         <li class="card">
-          <h3 class="card__ttl">医薬品カプセル</h3>
+          <h3 class="card__ttl">医薬品用カプセル</h3>
           <ul class="card__list">
-            <li>口腔速容性カプセル</li>
-            <li>カプセル  in カプセル</li>
-            <li>pH依存崩壊、腸溶性カプセル</li>
-            <li>大腸崩壊カプセル</li>
+            <li>口腔内即溶性製剤</li>
+            <li>pH依存崩壊性製剤</li>
+            <li>大腸崩壊性製剤</li>
           </ul>
         </li>
         <li class="card">
